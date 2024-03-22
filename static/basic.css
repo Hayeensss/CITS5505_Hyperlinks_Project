@@ -1,0 +1,109 @@
+@import url(https://db.onlinewebfonts.com/c/6f69888dec2bef4da45999a4b4a51e02?family=NeutraText-DemiAlt);
+
+.header-text {
+  font-family: "NeutraText-DemiAlt";
+  border-left: 1px solid rgba(221, 219, 212, 0.5);
+  padding-left: 50px;
+}
+
+.content-text {
+  font-size: 18px;
+}
+
+.horizontal-timeline .items {
+  border-top: 3px solid #e9ecef;
+}
+
+.horizontal-timeline .items .items-list {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  margin-right: 0;
+}
+
+.horizontal-timeline .items .items-list:before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  border-right: 2px dashed #dee2e6;
+  top: 0;
+}
+
+.horizontal-timeline .items .items-list .event-date {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  width: 75px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  padding-top: 8px;
+}
+
+@media (min-width: 1140px) {
+  .horizontal-timeline .items .items-list {
+    display: inline-block;
+    width: 24%;
+    padding-top: 45px;
+  }
+
+  .horizontal-timeline .items .items-list .event-date {
+    top: -40px;
+  }
+}
+/* 
+.about-box {
+  position: absolute;
+  top: 2.56rem;
+  right: 2.13rem;
+  width: 5.86rem;
+  height: 6.77rem;
+}
+
+.about-box.en {
+  width: 6rem;
+  right: 2rem;
+}
+
+.about-box-title {
+  display: inline-block;
+  height: 0.53rem;
+  margin-bottom: 0.32rem;
+}
+
+.about-box-title.en {
+  font-size: 0.4rem;
+  font-weight: 300;
+  color: #000;
+  height: auto;
+  line-height: 0.53rem;
+}
+
+.about-box-sub-title {
+  display: inline-block;
+  height: 0.37rem;
+  margin-bottom: 0.32rem;
+}
+
+.about-box-sub-title.en {
+  display: inline-block;
+  font-size: 0.27rem;
+  font-weight: 300;
+  color: #000;
+  height: auto;
+  white-space: nowrap;
+  line-height: 0.37rem;
+}
+
+.about-box-sub-title.en span {
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+
+.about-box-desc {
+  font-size: 0.21rem;
+  /* font-weight: 500; */
+/* line-height: 0.32rem; */
+/* color: #5b5549;
+} */
