@@ -1,7 +1,10 @@
 @import url(https://db.onlinewebfonts.com/c/6f69888dec2bef4da45999a4b4a51e02?family=NeutraText-DemiAlt);
+body {
+  font-family: "NeutraText-DemiAlt";
+}
 
 .header-text {
-  font-family: "NeutraText-DemiAlt";
+  /* font-family: "NeutraText-DemiAlt"; */
   border-left: 1px solid rgba(221, 219, 212, 0.5);
   padding-left: 50px;
 }
@@ -52,58 +55,31 @@
     top: -40px;
   }
 }
-/* 
-.about-box {
-  position: absolute;
-  top: 2.56rem;
-  right: 2.13rem;
-  width: 5.86rem;
-  height: 6.77rem;
+
+.img-cover {
+  margin-left: -250px;
+  margin-top: -80px;
+  padding: 0;
+  /* background-image: url("/static/img/types.webp"); */
+  background-size: cover;
+  background-position: center;
 }
 
-.about-box.en {
-  width: 6rem;
-  right: 2rem;
+#h3-body {
+  background-image: url("/static/img/h3-background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.about-box-title {
-  display: inline-block;
-  height: 0.53rem;
-  margin-bottom: 0.32rem;
+.h3-header {
+  font-size: 60px;
+  /* font-family: "NeutraText-DemiAlt"; */
+  font-weight: 800;
+  color: lightseagreen;
+  padding: 30px;
 }
-
-.about-box-title.en {
-  font-size: 0.4rem;
-  font-weight: 300;
-  color: #000;
-  height: auto;
-  line-height: 0.53rem;
-}
-
-.about-box-sub-title {
-  display: inline-block;
-  height: 0.37rem;
-  margin-bottom: 0.32rem;
-}
-
-.about-box-sub-title.en {
-  display: inline-block;
-  font-size: 0.27rem;
-  font-weight: 300;
-  color: #000;
-  height: auto;
-  white-space: nowrap;
-  line-height: 0.37rem;
-}
-
-.about-box-sub-title.en span {
-  display: inline-block;
-  margin-left: 0.2rem;
-}
-
-.about-box-desc {
-  font-size: 0.21rem;
-  /* font-weight: 500; */
-/* line-height: 0.32rem; */
-/* color: #5b5549;
-} */
