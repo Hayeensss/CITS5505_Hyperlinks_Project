@@ -1,6 +1,7 @@
-@import url(https://db.onlinewebfonts.com/c/6f69888dec2bef4da45999a4b4a51e02?family=NeutraText-DemiAlt);
+@import url(https://db.onlinewebfonts.com/c/dc7655bbe821034b0cc65201bd672124?family=Neutraface+Text+Demi+Alt);
+
 body {
-  font-family: "NeutraText-DemiAlt";
+  font-family: "Neutraface Text Demi Alt";
 }
 
 .header-text {
@@ -56,13 +57,57 @@ body {
   }
 }
 
-.img-cover {
-  margin-left: -250px;
-  margin-top: -80px;
+.h1-navbar {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.h1-img-cover {
+  margin-left: -280px;
+  margin-top: -30px;
   padding: 0;
   /* background-image: url("/static/img/types.webp"); */
   background-size: cover;
   background-position: center;
+}
+
+.h1-footer-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.h2-header {
+  border-top: 1px solid rgba(221, 219, 212, 0.5);
+  font-size: 60px;
+  text-align: center;
+  font-weight: 800;
+  color: lightseagreen;
+  padding: 30px;
+}
+
+.h2video-display {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 70px;
+  padding-top: 20px;
+}
+
+.h2-col {
+  width: 230px;
+  height: 150px;
+  background-color: #ededed;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.h2-icon {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.card:hover {
+  background-color: rgb(134, 214, 210);
+  color: white;
 }
 
 #h3-body {
@@ -82,4 +127,26 @@ body {
   font-weight: 800;
   color: lightseagreen;
   padding: 30px;
+}
+
+.h3-profile-img {
+  width: 60%;
+  height: auto;
+  /* box-shadow: 0 0 500px white; */
+  /* border-radius: 50%; */
+  border: 3px solid white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.icon-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-language {
+  margin-right: 20px;
+  transform: scale(1.5);
+  color: lightseagreen;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

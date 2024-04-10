@@ -25,9 +25,11 @@
     <!-- As a heading -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <span class="navbar-brand mb-0 h1"> <b>Hyperlinks</b></span>
-        <!-- setting a logo here -->
-        <img src="/static/hyperlinks.png" alt="logo" width="60" height="50" />
+        <span class="navbar-brand mb-0 h1">
+          <!-- setting a logo here -->
+          <img src="/static/img/logo.jpeg" alt="logo" width="80" height="60" />
+        </span>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -40,18 +42,20 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 h1-navbar gap-5">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Start</a>
+              <a class="nav-link active" aria-current="page" href="/home.html"
+                >Start</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="/history.html">History</a>
             </li>
 
             <li class="nav-item">
               <a
                 class="nav-link empty"
-                href="#"
+                href="/aboutme.html"
                 tabindex="-1"
                 aria-disabled="true"
                 >About Me</a
@@ -85,7 +89,7 @@
           <img
             src="/static/img/H1-background.png"
             alt="background"
-            class="img-cover"
+            class="h1-img-cover"
           />
         </div>
         <div class="col-4">
@@ -95,16 +99,17 @@
               "link" was coined in 1965, Ted Nelson
             </h2>
             <p class="text-secondary">
-              In computing, a hyperlink, or simply a link, is a digital
-              reference to data that the user can follow or be guided to by
-              clicking or tapping. A hyperlink points to a whole document or to
-              a specific element within a document. Hypertext is text with
-              hyperlinks. The text that is linked from is known as anchor text.
+              A hyperlink, also called a link or web link, contains an address
+              for a destination and acts as a reference to data. A user can
+              easily follow, jump to, and be directed to the destination by
+              either clicking, tapping on, or hovering over the link.
             </p>
           </div>
         </div>
       </div>
     </div>
+
+    Hyperlinks & HTML
 
     <div class="container-fluid py-5">
       <div class="row">
@@ -168,6 +173,75 @@
         </div>
       </div>
     </div>
+
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with me:</span>
+        </div>
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i
+                ><img
+                  src="static/img/logo.jpeg"
+                  alt="logo"
+                  class="h1-footer-logo"
+                />Hyperlink - CITS5505
+              </h6>
+              <p>This page are designed by HAYEEN.</p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">REFERENCES</h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">HAYEEN</a>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
