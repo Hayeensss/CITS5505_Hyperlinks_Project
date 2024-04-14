@@ -85,150 +85,664 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-8">
+        <div class="col-7">
           <img
             src="/static/img/H1-background.png"
             alt="background"
             class="h1-img-cover"
           />
         </div>
-        <div class="col-4">
-          <div class="header-text">
-            <h1>What is Hyperlinks</h1>
-            <h2 class="content-text text-center">
+        <div class="col-5 h1-col-5">
+          <div class="h1-header-text">
+            <p class="h1-intro">
+              Have you ever noticed that certain words on the Web look a little
+              bit different? Whenever you see a word or phrase that&rsquo;s
+              underlined in blue, it&rsquo;s probably a hyperlink, or link for
+              short.
+            </p>
+            <br />
+            <h1 class="h1-header-typing">What is Hyperlinks ?</h1>
+            <br />
+            <h3 class="content-text text-center">
               "link" was coined in 1965, Ted Nelson
-            </h2>
-            <p class="text-secondary">
+            </h3>
+            <p>
               A hyperlink, also called a link or web link, contains an address
               for a destination and acts as a reference to data. A user can
               easily follow, jump to, and be directed to the destination by
               either clicking, tapping on, or hovering over the link.
+
+              <!-- <span>HTTP</span>
+              <span>HTML</span> -->
             </p>
+            <br />
+            <br />
+            <br />
+            <p>
+              To understand what links are, let&rsquo;s go back to the very
+              basics of Web architecture.
+            </p>
+            <a href="#carousel" class="h1-active">
+              <svg
+                fill="#61b9bd"
+                height="50px"
+                width="50px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 511.881 511.881"
+                xml:space="preserve"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M248.36,263.428c4.16,4.16,10.88,4.16,15.04,0L508.733,18.095c4.053-4.267,3.947-10.987-0.213-15.04 c-4.16-3.947-10.667-3.947-14.827,0l-237.76,237.76L18.173,3.054C13.907-1.106,7.187-0.999,3.027,3.268 c-3.947,4.16-3.947,10.667,0,14.827L248.36,263.428z"
+                        ></path>
+                        <path
+                          d="M508.627,248.388c-4.267-4.053-10.773-4.053-14.933,0l-237.76,237.76l-237.76-237.76 c-4.267-4.053-10.987-3.947-15.04,0.213c-3.947,4.16-3.947,10.667,0,14.827l245.333,245.333c4.16,4.16,10.88,4.16,15.04,0 L508.84,263.428C512.893,259.161,512.787,252.441,508.627,248.388z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-
-    Hyperlinks & HTML
-
-    <div class="container-fluid py-5">
+      <!-- 
+    <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="horizontal-timeline">
-            <ul class="list-inline items">
-              <li class="list-inline-item items-list">
-                <div class="px-4">
-                  <div class="event-date badge bg-info">2 June</div>
-                  <h5 class="pt-2">Event One</h5>
-                  <p class="text-muted">
-                    It will be as simple as occidental in fact it will be
-                    Occidental Cambridge friend
-                  </p>
-                  <div>
-                    <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                  </div>
-                </div>
-              </li>
-              <li class="list-inline-item items-list">
-                <div class="px-4">
-                  <div class="event-date badge bg-success">5 June</div>
-                  <h5 class="pt-2">Event Two</h5>
-                  <p class="text-muted">
-                    Everyone realizes why a new common language one could refuse
-                    translators.
-                  </p>
-                  <div>
-                    <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                  </div>
-                </div>
-              </li>
-              <li class="list-inline-item items-list">
-                <div class="px-4">
-                  <div class="event-date badge bg-danger">7 June</div>
-                  <h5 class="pt-2">Event Three</h5>
-                  <p class="text-muted">
-                    If several languages coalesce the grammar of the resulting
-                    simple and regular
-                  </p>
-                  <div>
-                    <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                  </div>
-                </div>
-              </li>
-              <li class="list-inline-item items-list">
-                <div class="px-4">
-                  <div class="event-date badge bg-warning">8 June</div>
-                  <h5 class="pt-2">Event Four</h5>
-                  <p class="text-muted">
-                    Languages only differ in their pronunciation and their most
-                    common words.
-                  </p>
-                  <div>
-                    <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+        <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+          <h5>&lt;a&gt;: The Anchor element</h5>
+          <p>The &lt;a&gt; HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.
+
+            Content within each &lt;a&gt; should indicate the link's destination. If the href attribute is present, pressing the enter key while focused on the <a> element will activate it.
+            
+            </p>
         </div>
       </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-6">
+          .col-sm-6 .col-md-5 .col-lg-6
+        </div>
+        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+          .col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0
+        </div>
+      </div>
+    </div> -->
+
+      <section class="h1-section" id="carousel">
+        <!-- carousel for the url, http, html -->
+        <div
+          id="carouselComponent"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <img
+                    src="/static/img/h1-url.webp"
+                    class="d-block w-100 h1-img-carousel"
+                    alt="h1-url"
+                  />
+                </div>
+                <div class="col-5">
+                  <p>
+                    A URL is nothing more than the address of a given unique
+                    resource on the Web. In theory, each valid URL points to a
+                    unique resource. Such resources can be an HTML page, a CSS
+                    document, an image, etc. In practice, there are some
+                    exceptions, the most common being a URL pointing to a
+                    resource that no longer exists or that has moved. As the
+                    resource represented by the URL and the URL itself are
+                    handled by the Web server, it is up to the owner of the web
+                    server to carefully manage that resource and its associated
+                    URL.
+                  </p>
+                  <h3 class="pt-2">URL(Uniform Resource Locator)</h3>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <img
+                    src="/static/img/h1-http.jpg"
+                    class="d-block w-100 h1-img-carousel"
+                    alt="h1-http"
+                  />
+                </div>
+                <div class="col-5">
+                  <p>
+                    The Hypertext Transfer Protocol (HTTP) is an application
+                    layer protocol in the Internet protocol suite model for
+                    distributed, collaborative, hypermedia information
+                    systems.[1] HTTP is the foundation of data communication for
+                    the World Wide Web, where hypertext documents include
+                    hyperlinks to other resources that the user can easily
+                    access, for example by a mouse click or by tapping the
+                    screen in a web browser.
+                  </p>
+                  <h3 class="pt-2">HTTP(Hypertext Transfer Protocol)</h3>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <img
+                    src="/static/img/html-h1.jpg"
+                    class="d-block w-100 h1-img-carousel"
+                    alt="html-h1"
+                  />
+                </div>
+                <div class="col-5">
+                  <p>
+                    HTML is the code that is used to structure a web page and
+                    its content. For example, content could be structured within
+                    a set of paragraphs, a list of bulleted points, or using
+                    images and data tables. As the title suggests, this article
+                    will give you a basic understanding of HTML and its
+                    functions.
+                  </p>
+                  <h3 class="pt-2">HTML (HyperText Markup Language)</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thumbnail -->
+        <div class="d-flex justify-content-center gap-3 pt-5">
+          <a
+            type="button"
+            data-bs-target="#carouselComponent"
+            data-bs-slide-to="0"
+            aria-label="Slide 1"
+          >
+            <svg
+              viewBox="-2 -2 24.00 24.00"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="#000000"
+              width="80px"
+              height="80px"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0">
+                <rect
+                  x="-2"
+                  y="-2"
+                  width="24.00"
+                  height="24.00"
+                  rx="0"
+                  fill="#ffffff"
+                  strokewidth="0"
+                ></rect>
+              </g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>file_url [#1734]</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-340.000000, -1359.000000)"
+                    fill="#61b9bd"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M297.9792,1199.0005 L284.0002,1199.0005 L284.0002,1208.94827 L286.0002,1208.94827 L286.0002,1200.99005 L296.0002,1200.99005 L296.0002,1206.95872 L302.0002,1206.95872 L302.0002,1208.94827 L304.0002,1208.94827 L304.0002,1205.40488 L297.9792,1199.0005 Z M295.0002,1214.02661 C295.0002,1213.4765 294.5522,1213.03184 294.0002,1213.03184 L293.0002,1213.03184 L293.0002,1215.02139 L294.0002,1215.02139 C294.5522,1215.02139 295.0002,1214.57573 295.0002,1214.02661 L295.0002,1214.02661 Z M295.7242,1216.38424 L297.0002,1218.89605 L295.0002,1218.89605 L294.0002,1216.90649 L293.0002,1216.90649 L293.0002,1218.89605 L291.0002,1218.89605 L291.0002,1210.93783 L294.0002,1210.93783 C295.6572,1210.93783 297.0002,1212.32554 297.0002,1213.97389 C297.0002,1214.98259 296.4942,1215.84407 295.7242,1216.38424 L295.7242,1216.38424 Z M300.0002,1210.93783 L298.0002,1210.93783 L298.0002,1218.89605 L304.0002,1218.89605 L304.0002,1216.90649 L300.0002,1216.90649 L300.0002,1210.93783 Z M288.0002,1210.93783 L290.0002,1210.93783 L290.0002,1216.01617 C290.0002,1217.66352 288.6572,1219.0005 287.0002,1219.0005 C285.3432,1219.0005 284.0002,1217.66352 284.0002,1216.01617 L284.0002,1210.93783 L286.0002,1210.93783 L286.0002,1216.01617 C286.0002,1216.56528 286.4482,1217.01095 287.0002,1217.01095 C287.5522,1217.01095 288.0002,1216.56528 288.0002,1216.01617 L288.0002,1210.93783 Z"
+                        id="file_url-[#1734]"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a
+            type="button"
+            data-bs-target="#carouselComponent"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          >
+            <svg
+              fill="#61b9bd"
+              height="80px"
+              width="80px"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512.002 512.002"
+              xml:space="preserve"
+              width="80px"
+              height="80px"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <g>
+                    <path
+                      d="M117.333,298.668c-5.888,0-10.667,4.779-10.667,10.667v32H64v-32c0-5.888-4.779-10.667-10.667-10.667 s-10.667,4.779-10.667,10.667v85.333c0,5.888,4.779,10.667,10.667,10.667S64,400.556,64,394.668v-32h42.667v32 c0,5.888,4.779,10.667,10.667,10.667S128,400.556,128,394.668v-85.333C128,303.447,123.221,298.668,117.333,298.668z"
+                    ></path>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M202.667,298.668H160c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667h10.667v74.667 c0,5.888,4.779,10.667,10.667,10.667S192,400.556,192,394.668v-74.667h10.667c5.888,0,10.667-4.779,10.667-10.667 S208.555,298.668,202.667,298.668z"
+                    ></path>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M288,298.668h-42.667c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667H256v74.667 c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-74.667H288c5.888,0,10.667-4.779,10.667-10.667 S293.888,298.668,288,298.668z"
+                    ></path>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M352,298.668h-21.333c-5.888,0-10.667,4.779-10.667,10.667v85.333c0,5.888,4.779,10.667,10.667,10.667 s10.667-4.779,10.667-10.667v-32H352c17.643,0,32-14.357,32-32C384,313.025,369.643,298.668,352,298.668z M352,341.335h-10.667 v-21.333H352c5.867,0,10.667,4.779,10.667,10.667S357.867,341.335,352,341.335z"
+                    ></path>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M503.915,298.988c-5.781-1.429-11.52,2.027-12.928,7.765l-21.333,85.333c-1.429,5.717,2.027,11.499,7.765,12.928 c0.875,0.213,1.728,0.32,2.581,0.32c4.8,0,9.152-3.221,10.347-8.085l21.333-85.333 C513.109,306.199,509.653,300.417,503.915,298.988z"
+                    ></path>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M461.248,298.988c-5.803-1.429-11.52,2.027-12.928,7.765l-21.333,85.333c-1.429,5.717,2.027,11.499,7.765,12.928 c0.875,0.213,1.728,0.32,2.581,0.32c4.8,0,9.152-3.221,10.347-8.085l21.333-85.333 C470.443,306.199,466.987,300.417,461.248,298.988z"
+                    ></path>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="416" cy="330.668" r="10.667"></circle>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="416" cy="373.335" r="10.667"></circle>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M373.333,277.335c5.888,0,10.667-4.779,10.667-10.667v-256c0-5.888-4.779-10.667-10.667-10.667H138.667 c-1.429,0-2.816,0.299-4.117,0.832c-0.619,0.256-1.088,0.725-1.643,1.088c-0.597,0.384-1.28,0.683-1.792,1.195l-128,128 c-0.491,0.491-0.768,1.152-1.152,1.728c-0.384,0.576-0.875,1.067-1.131,1.707C0.299,135.852,0,137.239,0,138.668v362.667 c0,5.888,4.779,10.667,10.667,10.667h362.667c5.888,0,10.667-4.779,10.667-10.667v-64c0-5.888-4.779-10.667-10.667-10.667 c-5.888,0-10.667,4.779-10.667,10.667v53.333H21.333V149.334h117.333c5.888,0,10.667-4.779,10.667-10.667V21.334h213.333v245.333 C362.667,272.556,367.445,277.335,373.333,277.335z M128,128.001H36.416L128,36.417V128.001z"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a
+            type="button"
+            data-bs-target="#carouselComponent"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          >
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+              xml:space="preserve"
+              fill="#000000"
+              width="80px"
+              height="80px"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <rect
+                  x="67.544"
+                  y="4"
+                  style="fill: #ffffff"
+                  width="376.96"
+                  height="504"
+                ></rect>
+                <path
+                  style="fill: #aac1ce"
+                  d="M440.456,8v496H71.544V8H440.456 M448.456,0H63.544v512h384.912V0z"
+                ></path>
+                <g>
+                  <path
+                    style="fill: #415e72"
+                    d="M130.576,117.512l85.6-39.752v18.896L151.464,125v0.36l64.712,28.344V172.6l-85.6-39.752 L130.576,117.512z"
+                  ></path>
+                  <path
+                    style="fill: #415e72"
+                    d="M229.352,179.728L267.504,50.48h18.008L247.36,179.728H229.352z"
+                  ></path>
+                  <path
+                    style="fill: #415e72"
+                    d="M381.424,133.376l-85.6,39.2v-18.872L362,125.36V125l-66.136-28.344V77.76l85.6,39.2 L381.424,133.376z"
+                  ></path>
+                </g>
+                <g>
+                  <path
+                    style="fill: #61b9bd"
+                    d="M136.056,301.352h-18.704l20-95.528h18.704l-7.2,34.016c3.576-2.92,7.552-5.32,11.8-7.136 c3.736-1.472,7.72-2.216,11.736-2.184c4.896-0.272,9.696,1.464,13.288,4.8c3.344,3.352,5.128,7.952,4.928,12.68 c-0.208,4.344-0.824,8.664-1.832,12.896l-8.472,40.472H161.6l8.664-41.248c0.672-2.832,1.128-5.704,1.368-8.6 c0.096-2.064-0.688-4.08-2.152-5.536c-1.6-1.456-3.712-2.208-5.864-2.088c-3.28,0.056-6.44,1.2-8.992,3.256 c-3.656,2.776-6.584,6.392-8.528,10.552c-1.912,5.272-3.352,10.696-4.304,16.224L136.056,301.352z"
+                  ></path>
+                  <path
+                    style="fill: #61b9bd"
+                    d="M203.312,246.024l2.864-13.872h9.12l2.28-11.08l21.44-12.904l-5.016,24h11.408l-2.864,13.872 h-11.472l-6.064,29c-0.688,2.968-1.216,5.968-1.6,8.992c-0.072,1.272,0.432,2.504,1.368,3.36c1.464,0.952,3.216,1.376,4.952,1.2 c0.824,0,2.88-0.152,6.184-0.456L232.96,302c-3.256,0.664-6.576,0.992-9.904,0.984c-5.096,0.432-10.184-0.92-14.4-3.816 c-3.048-2.656-4.704-6.56-4.496-10.592c0.432-4.96,1.232-9.888,2.4-14.728l5.8-27.832L203.312,246.024z"
+                  ></path>
+                  <path
+                    style="fill: #61b9bd"
+                    d="M256.944,232.152h17.6l-1.744,8.408c5.568-6.096,13.344-9.712,21.6-10.04 c4.264-0.272,8.504,0.872,12.056,3.256c2.856,2.224,4.784,5.432,5.408,8.992c2.664-3.712,6.2-6.704,10.296-8.728 c4.288-2.304,9.08-3.512,13.944-3.52c4.72-0.28,9.352,1.312,12.904,4.432c3.128,3.08,4.808,7.344,4.624,11.736 c-0.248,4.176-0.864,8.32-1.832,12.384l-8.84,42.28h-18.696l8.856-42.288c1.064-5.304,1.6-8.304,1.6-8.992 c0.088-1.688-0.544-3.328-1.728-4.528c-1.44-1.208-3.296-1.808-5.176-1.664c-5.112,0.256-9.768,3.008-12.448,7.368 c-3.496,5.712-5.808,12.072-6.784,18.704l-6.576,31.408h-18.672l8.728-41.832c0.744-3.088,1.248-6.224,1.504-9.384 c0.056-1.696-0.616-3.328-1.848-4.496c-1.408-1.232-3.248-1.864-5.12-1.76c-2.232,0.056-4.408,0.688-6.32,1.832 c-2.224,1.264-4.168,2.968-5.704,5.016c-1.824,2.496-3.24,5.272-4.2,8.208c-0.536,1.56-1.376,5.104-2.536,10.624l-6.648,31.8 H242.48L256.944,232.152z"
+                  ></path>
+                  <path
+                    style="fill: #61b9bd"
+                    d="M361.6,301.352l20-95.528h18.64l-19.944,95.528H361.6z"
+                  ></path>
+                </g>
+                <g>
+                  <rect
+                    x="112"
+                    y="417.92"
+                    style="fill: #aac1ce"
+                    width="288"
+                    height="8"
+                  ></rect>
+                  <rect
+                    x="112"
+                    y="451.68"
+                    style="fill: #aac1ce"
+                    width="288"
+                    height="8"
+                  ></rect>
+                  <rect
+                    x="112"
+                    y="384.16"
+                    style="fill: #aac1ce"
+                    width="288"
+                    height="8"
+                  ></rect>
+                  <rect
+                    x="112"
+                    y="350.44"
+                    style="fill: #aac1ce"
+                    width="288"
+                    height="8"
+                  ></rect>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="h1-section h1-card">
+        <div class="px-5">
+          <h4>
+            As you can see in the three pillars, everything on the Web revolves
+            around documents and how to access them.
+          </h4>
+          <p>
+            The Web&rsquo;s original purpose was to provide an easy way to
+            reach, read, and navigate through text documents. Since then, the
+            Web has evolved to provide access to images, videos, and binary
+            data, but these improvements have hardly changed the three pillars.
+            Before the Web, it was quite hard to access documents and move from
+            one to another. Being human-readable, URLs already made things
+            easier, but it&rsquo;s hard to type a long URL whenever you want to
+            access a document. This is where hyperlinks revolutionized
+            everything. Links can correlate any text string with a URL, such
+            that the user can instantly reach the target document by activating
+            the link.
+          </p>
+        </div>
+      </section>
+
+      <!-- anchor & XMLHttprequest -->
+      <section class="h1-section">
+        <h3 class="pt-2 pb-5 text-center text-color">
+          How to implement hyperlinks? <br />Two important components!
+        </h3>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-4">
+            <div class="card h1-components">
+              <div class="content text-center">
+                <h2 style="color: #61b9bd">01</h2>
+                <h3>Anchor Tag</h3>
+                <p class="px-4">
+                  Anchor tags in HTML code are HTML elements used to create
+                  hyperlinks in webpages.
+                </p>
+                <a
+                  class="btn"
+                  style="color: #61b9bd"
+                  data-bs-toggle="collapse"
+                  href="#collapseanchor"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseanchor"
+                >
+                  Read more
+                </a>
+                <div class="collapse" id="collapseanchor">
+                  <div class="card card-body" style="background: #b6b8ba">
+                    <p>
+                      They allow you to link to another webpage, a specific
+                      section of a page, an email address, a file, or any other
+                      URL. They are also known as anchor elements or &lt;a&gt;
+                      tags.
+                      <br />The &lt;a&gt; HTML element (or anchor element), with
+                      its href attribute, creates a hyperlink to web pages,
+                      files, email addresses, locations in the same page, or
+                      anything else a URL can address. Content within each
+                      &lt;a&gt; should indicate the link&rsquo;s destination. If
+                      the href attribute is present, pressing the enter key
+                      while focused on the &lt;a&gt; element will activate it.
+                      <br />Anchor links (or “jump” links) link to different
+                      sections of the same webpage. When you create text links
+                      with the “a” tag, you&rsquo; ll need to use some kind of
+                      anchor text. Google uses this text to learn more about the
+                      link and the content it points to.
+                      <br />
+                      Href The “href,” short for hypertext reference, attribute
+                      specifies the target for the anchor element. It&rsquo;s
+                      commonly used to define the URL of the page the tag links
+                      to. But you can also use it to link to files, email
+                      addresses, phone numbers, and more. The href anchor tag is
+                      the URL between quotation marks.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card h1-components">
+              <div class="content text-center">
+                <h2 style="color: #61b9bd">02</h2>
+                <h3>XMLHttpRequest</h3>
+                <p class="px-4">
+                  XMLHttpRequest (XHR) objects are used to interact with
+                  servers.
+                </p>
+                <a
+                  class="btn"
+                  style="color: #61b9bd"
+                  data-bs-toggle="collapse"
+                  href="#collapsexmlhttp"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapsexmlhttp"
+                >
+                  Read more
+                </a>
+                <div class="collapse" id="collapsexmlhttp">
+                  <div class="card card-body" style="background: #b6b8ba">
+                    <p>
+                      XMLHttpRequest (XHR) is a JavaScript object API used to
+                      transmit HTTP requests from a web browser to a web server.
+                      These methods enable fine-grained server calls for
+                      browser-based applications, storing the results in the
+                      responseText attribute of XMLHttpRequest. XMLHttpRequest
+                      is a component of Ajax programming. Before Ajax,
+                      hyperlinks and form submissions were the primary
+                      mechanisms for interacting with servers, often resulting
+                      in page replacements.
+                      <br />With XMLHttpRequest, you can retrieve data from a
+                      URL without requiring a full page refresh. This allows web
+                      pages to update specific sections without disrupting user
+                      activities.
+
+                      <br />
+                      <br />
+                      The XMLHttpRequest object is a developer&rsquo;s dream
+                      because it allows you to:
+                      <br />
+                      * Update a web page without reloading the page
+                      <br />
+                      * Request data from a server - after the page has loaded
+                      <br />* Receive data from a server - after the page has
+                      loaded <br />* Send data to a server - in the background
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="h1-section">
+        <div class="px-5">
+          <h3 class="text-center text-color pb-2">
+            How to create a hyperlink on your webpage
+          </h3>
+          <p>
+            Depending on the web content management system you use, the location
+            and appearance of your tools may vary. In general, the tool for
+            hyperlinking text will look like a chain link. Sometimes the tools
+            for “add an attachment” and “hyperlink text” can look similar, so
+            you may have to test to be certain you have the right one.
+          </p>
+          <p>
+            The hyperlink tool will expect two inputs: your anchor text
+            (sometimes called “target text” or similar) and the full URL or web
+            address of the link. If you highlight your anchor text before
+            clicking on the link tool, most interfaces will automatically
+            populate your highlighted text as the anchor text. Open the URL you
+            want to link in a browser, copy the URL, and paste it into the
+            hyperlink tool. Save the change, and the text in your paragraph will
+            appear as colored, underlined text. Save the page to save your new
+            link. You can test it by clicking on the anchor text.
+          </p>
+        </div>
+      </section>
     </div>
 
     <footer class="text-center text-lg-start bg-body-tertiary text-muted">
       <section
         class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
       >
-        <div class="me-5 d-none d-lg-block">
+        <div class="me-5 d-none d-lg-block text-center">
           <span>Get connected with me:</span>
         </div>
         <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
+          <a
+            href="https://www.linkedin.com/in/hayeen-xue-0a59772b8"
+            target="_blank"
+            class="me-4 text-reset"
+          >
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="" class="me-4 text-reset">
+          <a
+            href="https://github.com/Hayeensss"
+            target="_blank"
+            class="me-4 text-reset"
+          >
             <i class="fab fa-github"></i>
           </a>
         </div>
       </section>
       <section class="">
-        <div class="container text-center text-md-start mt-5">
+        <div class="text-center text-md-start mt-5">
           <div class="row mt-3">
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i
-                ><img
+                <img
                   src="static/img/logo.jpeg"
                   alt="logo"
                   class="h1-footer-logo"
-                />Hyperlink - CITS5505
+                />
+                Hyperlink - CITS5505
               </h6>
               <p>This page are designed by HAYEEN.</p>
+              <a href="mailto:gracehayeens@gmail.com">Send Email to Me Now!</a>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 class="text-uppercase fw-bold mb-4">REFERENCES</h6>
               <p>
-                <a href="#!" class="text-reset">Angular</a>
+                <a
+                  href="https://en.wikipedia.org/wiki/XMLHttpRequest"
+                  class="text-reset"
+                  >Wikipedia - XMLHttpRequest</a
+                >
               </p>
               <p>
-                <a href="#!" class="text-reset">React</a>
+                <a
+                  href="https://developer.mozilla.org/en-US/"
+                  class="text-reset"
+                  >Mdn web docs</a
+                >
               </p>
               <p>
-                <a href="#!" class="text-reset">Vue</a>
+                <a
+                  href="https://www.freecodecamp.org/news/what-is-a-hyperlink-definition-for-html-link-beginners/"
+                  class="text-reset"
+                  >free code camp</a
+                >
               </p>
               <p>
-                <a href="#!" class="text-reset">Laravel</a>
+                <a href="https://codepen.io/" class="text-reset">Codepen</a>
               </p>
             </div>
           </div>
@@ -239,7 +753,7 @@
         style="background-color: rgba(0, 0, 0, 0.05)"
       >
         © 2024 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">HAYEEN</a>
+        <a class="text-reset fw-bold" href="">HAYEEN</a>
       </div>
     </footer>
 

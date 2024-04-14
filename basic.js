@@ -1,20 +1,97 @@
-localStorage.setItem("theme", "light");
-$("#themedark").addClass("d-none");
-$("html").attr("data-bs-theme", "light");
+// change theme
+
+$(document).ready(function () {
+  localStorage.setItem("theme", "light");
+  $("#themedark").addClass("d-none");
+  $("html").attr("data-bs-theme", "light");
+});
 
 function handleClick() {
   if (localStorage.getItem("theme") !== "light") {
-    // console.log("try light");
     $("#themedark").addClass("d-none");
     $("#themelight").removeClass("d-none");
     $("html").attr("data-bs-theme", "light");
     localStorage.setItem("theme", "light");
   } else {
-    // console.log("try dark");
     $("#themelight").addClass("d-none");
     $("#themedark").removeClass("d-none");
     $("html").attr("data-bs-theme", "dark");
     localStorage.setItem("theme", "dark");
   }
-  // console.log("last print");
+}
+
+// feedback form event handlers
+
+function handleFeedback() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+
+  const data = `Hi, ${name}.<br>Your Email is ${email} , \
+  <br>and phone is ${phone}. <br>Would you like to proceed and submit the message?`;
+
+  document.getElementById("feedback_info").innerHTML = data;
+}
+
+function handleConfirm() {
+  const success = "Your message has been sent successfully!";
+  alert(success);
+}
+
+// ajax: fetch gavatar image using a get request
+
+async function handleAvatar() {
+  const email = document.getElementById("email").value;
+  if (email === "") {
+    return;
+  }
+
+  // create gavatar url
+  const gavartar_url = await getGavatarUrl(email);
+
+  // fetch gavatar image
+  try {
+    const gavatar_data = await fetchGavatar(gavartar_url);
+    if (gavatar_data instanceof Blob) {
+      const blobUrl = URL.createObjectURL(gavatar_data);
+      // display gavatar image
+      document.getElementById("avatarImg").src = blobUrl;
+    } else {
+      console.error("Invalid gravatar image data:", gavatar_data);
+    }
+  } catch (error) {
+    console.error("Error fetching gravatar image:", error);
+  }
+}
+
+async function getGavatarUrl(email) {
+  const address = email.trim().toLowerCase();
+  const data = new TextEncoder().encode(address);
+
+  try {
+    const hashBuffer = await window.crypto.subtle.digest("SHA-256", data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray
+      .map((byte) => byte.toString(16).padStart(2, "0"))
+      .join("");
+    return `https://www.gravatar.com/avatar/${hashHex}?d=identicon`;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+async function fetchGavatar(url) {
+  try {
+    const response = await fetch(url);
+    return await response.blob();
+  } catch (error) {
+    console.error("Error fetching gravatar image:", error);
+  }
+}
+
+// email input to lower case
+
+function toLowerCase() {
+  const emailInput = document.getElementById("email");
+  emailInput.value = emailInput.value.toLowerCase();
 }
