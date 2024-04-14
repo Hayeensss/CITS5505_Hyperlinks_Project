@@ -95,3 +95,25 @@ function toLowerCase() {
   const emailInput = document.getElementById("email");
   emailInput.value = emailInput.value.toLowerCase();
 }
+
+// ajax: fecth message from api
+const message_api =
+  "https://fakerapi.it/api/v1/texts?_quantity=1&_characters=100";
+async function fetchMessage() {
+  console.log("fetching message...");
+  try {
+    const response = await fetch(message_api);
+    const info = await response.json();
+    const message = info.data[0].content;
+    return message;
+  } catch (error) {
+    console.error("Error fetching message:", error);
+  }
+}
+
+// generate message
+async function handleMessage() {
+  const message = await fetchMessage();
+  console.log("??message:", message);
+  document.getElementById("GenerateMessage").value = message;
+}
