@@ -1,5 +1,4 @@
 // change theme
-
 $(document).ready(function () {
   localStorage.setItem("theme", "light");
   $("#themedark").addClass("d-none");
@@ -20,8 +19,18 @@ function handleClick() {
   }
 }
 
-// feedback form event handlers
+// Read more handlers (show more/less content)
+function handleReadMoreClick() {
+  if (
+    document.getElementById("collapsemorehttp").classList.contains("d-none")
+  ) {
+    document.getElementById("collapsemorehttp").classList.remove("d-none");
+  } else {
+    document.getElementById("collapsemorehttp").classList.add("d-none");
+  }
+}
 
+// feedback form event handlers
 function handleFeedback() {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
@@ -39,7 +48,6 @@ function handleConfirm() {
 }
 
 // ajax: fetch gavatar image using a get request
-
 async function handleAvatar() {
   const email = document.getElementById("email").value;
   if (email === "") {
@@ -90,7 +98,6 @@ async function fetchGavatar(url) {
 }
 
 // email input to lower case
-
 function toLowerCase() {
   const emailInput = document.getElementById("email");
   emailInput.value = emailInput.value.toLowerCase();
@@ -116,4 +123,14 @@ async function handleMessage() {
   const message = await fetchMessage();
   console.log("??message:", message);
   document.getElementById("GenerateMessage").value = message;
+}
+
+// click to github repo
+function handlePjClick(id) {
+  let url = "";
+  if (id === 1) {
+    url = "https://github.com/Hayeensss/fpl_analysis_2223";
+  }
+
+  window.open(url, "_blank");
 }

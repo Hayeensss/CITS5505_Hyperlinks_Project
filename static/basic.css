@@ -37,7 +37,7 @@ body {
 }
 
 /*===== Animation effects - slideIn =====*/
-.h1-col-5 {
+.text-slideIn {
   opacity: 0;
   transform: translateX(-100%);
   animation: slideIn 1s forwards;
@@ -387,8 +387,8 @@ Generic layout (demo looks)
 .card-app {
   margin: 20px;
   padding: 20px;
-  width: 500px;
-  min-height: 200px;
+  width: 300px;
+  min-height: 80px;
   display: grid;
   grid-template-rows: 20px 50px 1fr 50px;
   border-radius: 10px;
@@ -704,106 +704,6 @@ Generic layout (demo looks)
 }
 /*=====  About me card - profile=====*/
 
-/* .icon-display {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.icon-language {
-  margin-right: 20px;
-  transform: scale(1.5);
-  color: lightseagreen;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-} */
-/* 
-.avatar svg {
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.avatar {
-  svg:first-child {
-    animation: top-quote 2s infinite;
-  }
-  svg:nth-child(2) {
-    animation: bottom-quote 2s infinite;
-  }
-}
-@keyframes top-quote {
-  0% {
-    transform: translate(50px, 80px);
-    opacity: 0;
-  }
-  50% {
-    transform: translate(50px, 0px);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
-@keyframes bottom-quote {
-  0% {
-    transform: translate(-50px, -80px);
-    opacity: 0;
-  }
-  50% {
-    transform: translate(-50px, 0px);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
-} */
-
 .h3-gapline {
   /* border-left: 1px solid rgba(221, 219, 212, 0.5); */
   padding-left: 50px;
@@ -826,6 +726,118 @@ Generic layout (demo looks)
       0px var(--stroke-color);
 }
 /*=====  Headings font style  =====*/
+
+/*=====  Project Carousel  =====*/
+.carousel {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 30px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.carousel__container {
+  white-space: nowrap;
+
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.categories__title {
+  color: rgb(77, 55, 102);
+  font-size: 28px;
+  position: absolute;
+  padding-left: 30px;
+}
+
+.carousel-item {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: #95bcd6;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-top: 70px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 1000ms all;
+  transition: 1000ms all;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+  position: relative;
+}
+
+.carousel-item:hover ~ .carousel-item {
+  -webkit-transform: translate3d(100px, 0, 0);
+  transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel-item {
+  opacity: 0.3;
+}
+
+.carousel__container:hover .carousel-item:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.carousel-item__img {
+  width: 200px;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.carousel-item__details {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 0, 0, 0.9)),
+    to(rgba(0, 0, 0, 0))
+  );
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  font-size: 10px;
+  opacity: 0;
+  -webkit-transition: 450ms opacity;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.carousel-item__details:hover {
+  opacity: 1;
+}
+
+.carousel-item__details span {
+  /* width: 10px;
+  height: 10px; */
+  font-size: 0.9rem;
+  color: #2ecc71;
+  /* background-color: white; */
+}
+
+.carousel-item__details .controls {
+  padding-top: 180px;
+}
+
+.carousel-item__details .carousel-item__details--title,
+.carousel-item__details--subtitle {
+  color: #fff;
+  margin: 5px 0;
+}
+
+/*=====  Project Carousel  =====*/
 
 /*=====  language cards  =====*/
 .h3-language-hover {
@@ -962,7 +974,6 @@ Generic layout (demo looks)
   margin-bottom: 8%;
   margin-top: -10%;
   text-align: center;
-  color: #8fb547;
 }
 .contact-form .btnContact {
   width: 60%;
