@@ -5,6 +5,7 @@ $(document).ready(function () {
   $("html").attr("data-bs-theme", "light");
 });
 
+// Theme handlers
 function handleClick() {
   if (localStorage.getItem("theme") !== "light") {
     $("#themedark").addClass("d-none");
@@ -20,13 +21,31 @@ function handleClick() {
 }
 
 // Read more handlers (show more/less content)
-function handleReadMoreClick() {
-  if (
-    document.getElementById("collapsemorehttp").classList.contains("d-none")
-  ) {
-    document.getElementById("collapsemorehttp").classList.remove("d-none");
+function handleUrlReadMoreClick() {
+  if (document.getElementById("collapsemoreUrl").classList.contains("d-none")) {
+    document.getElementById("collapsemoreUrl").classList.remove("d-none");
   } else {
-    document.getElementById("collapsemorehttp").classList.add("d-none");
+    document.getElementById("collapsemoreUrl").classList.add("d-none");
+  }
+}
+
+function handleHtmlReadMoreClick() {
+  if (
+    document.getElementById("collapsemoreHtml").classList.contains("d-none")
+  ) {
+    document.getElementById("collapsemoreHtml").classList.remove("d-none");
+  } else {
+    document.getElementById("collapsemoreHtml").classList.add("d-none");
+  }
+}
+
+function handleHttpReadMoreClick() {
+  if (
+    document.getElementById("collapsemoreHttp").classList.contains("d-none")
+  ) {
+    document.getElementById("collapsemoreHttp").classList.remove("d-none");
+  } else {
+    document.getElementById("collapsemoreHttp").classList.add("d-none");
   }
 }
 

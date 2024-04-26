@@ -131,7 +131,7 @@
               alt="Arrow"
               title="Scroll to top"
               loading="lazy"
-              onclick="location.href='#carousel'"
+              onclick="location.href='#threepillars'"
             />
           </div>
         </div>
@@ -143,7 +143,7 @@
         <br />spoke of the three pillars on which the Web stands
       </h4>
       <!-- cards for the url, http, html -->
-      <section class="articles pb-3">
+      <section class="articles pb-3" id="threepillars">
         <article>
           <div class="article-wrapper">
             <figure>
@@ -155,7 +155,7 @@
                 A URL is nothing more than the address of a given unique
                 resource on the Web.
               </p>
-              <div class="d-none" id="collapsemorehttp">
+              <div class="d-none" id="collapsemoreUrl">
                 In theory, each valid URL points to a unique resource. Such
                 resources can be an HTML page, a CSS document, an image, etc. In
                 practice, there are some exceptions, the most common being a URL
@@ -164,7 +164,7 @@
                 handled by the Web server, it is up to the owner of the web
                 server to carefully manage that resource and its associated URL.
               </div>
-              <a onclick="handleReadMoreClick()" class="read-more">
+              <a onclick="handleUrlReadMoreClick()" class="read-more">
                 Read more <span class="sr-only">about this is some title</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -193,14 +193,14 @@
                 HTML is the code that is used to structure a web page and its
                 content.
               </p>
-              <div class="d-none" id="collapsemorehttp">
+              <div class="d-none" id="collapsemoreHtml">
                 For example, content could be structured within a set of
                 paragraphs, a list of bulleted points, or using images and data
                 tables. As the title suggests, this article will give you a
                 basic understanding of HTML and its functions.
               </div>
 
-              <a onclick="handleReadMoreClick()" class="read-more">
+              <a onclick="handleHtmlReadMoreClick()" class="read-more">
                 Read more <span class="sr-only">about this is some title</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -230,13 +230,13 @@
                 protocol in the Internet protocol suite model for distributed,
                 collaborative, hypermedia information systems.
               </p>
-              <div class="d-none" id="collapsemorehttp">
+              <div class="d-none" id="collapsemoreHttp">
                 HTTP is the foundation of data communication for the World Wide
                 Web, where hypertext documents include hyperlinks to other
                 resources that the user can easily access, for example by a
                 mouse click or by tapping the screen in a web browser.
               </div>
-              <a class="read-more" onclick="handleReadMoreClick()">
+              <a class="read-more" onclick="handleHttpReadMoreClick()">
                 Read more <span class="sr-only">about this is some title</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
