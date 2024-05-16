@@ -17,7 +17,13 @@ body {
 }
 /*===== global setting - Font =====*/
 
-/*===== single setting - Font =====*/
+.h1-header-text {
+  /* font-family: "NeutraText-DemiAlt"; */
+  /* border-left: 1px solid rgba(221, 219, 212, 0.5); */
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
 .text-color {
   color: lightseagreen;
 }
@@ -29,7 +35,6 @@ body {
 .content-text {
   font-size: 18px;
 }
-/*===== single setting - Font =====*/
 
 /*===== Animation effects - slideIn =====*/
 .text-slideIn {
@@ -94,6 +99,11 @@ body {
 }
 /*===== Animation effects - swing arrow =====*/
 
+.h1-img-carousel {
+  width: 600px;
+  height: 400px;
+}
+
 .h1-navbar {
   font-size: 28px;
   font-weight: 800;
@@ -116,7 +126,7 @@ body {
   color: white;
 }
 
-/*===== cards - html/url/http =====*/
+/*===== cards - 测试 =====*/
 article {
   --img-scale: 1.001;
   --title-color: black;
@@ -139,6 +149,7 @@ article a::after {
   content: "";
 }
 
+/* basic article elements styling */
 article h2 {
   margin: 0 0 18px 0;
   font-family: "Bebas Neue", cursive;
@@ -187,7 +198,8 @@ article a .icon {
   transition: all 0.3s;
 }
 
-article:hover {
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
   --img-scale: 1.1;
   --title-color: #28666e;
   --link-icon-translate: 0;
@@ -195,6 +207,10 @@ article:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+
+/************************ 
+Generic layout (demo looks)
+**************************/
 
 *,
 *::before,
@@ -212,8 +228,32 @@ article:hover {
 }
 
 @media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
   .article-body p {
     display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
   }
 }
 
@@ -226,12 +266,12 @@ article:hover {
   white-space: nowrap;
   width: 1px;
 }
-/*===== cards - html/url/http =====*/
+/*===== cards - 测试 =====*/
 
 /*===== cards - summarise for three pillars =====*/
 .h1-card {
   border-radius: 10px;
-  filter: drop-shadow(0 5px 10px #ffffff);
+  filter: drop-shadow(0 5px 10px 0 #ffffff);
   width: 1300px;
   background-color: #ffffff;
   padding: 20px;
@@ -665,12 +705,14 @@ article:hover {
 /*=====  About me card - profile=====*/
 
 .h3-gapline {
+  /* border-left: 1px solid rgba(221, 219, 212, 0.5); */
   padding-left: 50px;
 }
 
 /*=====  Headings font style  =====*/
 .header-font-style {
   font-size: calc(1em + 2vmin);
+  font-weight: 90px;
   color: #61b9bd;
 
   --x-offset: -0.0625em;
@@ -716,6 +758,7 @@ article:hover {
   background-color: #95bcd6;
   overflow: hidden;
   margin-right: 10px;
+  margin-top: 70px;
   display: inline-block;
   cursor: pointer;
   -webkit-transition: 1000ms all;
@@ -777,8 +820,11 @@ article:hover {
 }
 
 .carousel-item__details span {
+  /* width: 10px;
+  height: 10px; */
   font-size: 0.9rem;
   color: #2ecc71;
+  /* background-color: white; */
 }
 
 .carousel-item__details .controls {
@@ -915,6 +961,8 @@ article:hover {
 }
 .contact-image img {
   width: 11%;
+  /* margin-top: -3%; */
+  /* transform: rotate(29deg); */
 }
 .contact-form form {
   padding: 14%;
