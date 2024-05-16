@@ -1,0 +1,4 @@
+name: cits5505-static-project
+routes:
+  - pattern: "/*"
+    script: "index.html"
